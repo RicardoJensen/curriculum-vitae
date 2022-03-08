@@ -1,0 +1,13 @@
+<div class="ms-3 d-flex">
+    <app-list-item
+        class="me-1"
+        [listItemNoDot]="true"
+        [listItemNoPadding]="true"
+        [listItemText]="languageSelectorLabel"
+    >
+    </app-list-item>
+    <select #languageSelector class="form-select" (change)="updateSelect($event)">
+        <option value="en-US">English</option>
+        <option value="pt-BR">Português</option>
+    </select>
+</div>

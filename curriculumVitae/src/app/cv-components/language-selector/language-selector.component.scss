@@ -1,0 +1,16 @@
+.form-select {
+    color: var(--black) !important;
+    background-color: var(--white) !important;
+    border-color: var(--light-grey) !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    font-family: Roboto !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    position: relative;
+    top: -5px;
+}
+
+select option:hover {
+    box-shadow: 0 0 10px 100px #000 inset;
+}

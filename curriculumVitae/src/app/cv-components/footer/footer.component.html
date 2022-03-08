@@ -1,0 +1,21 @@
+<div class="footer-div mb-4">
+    <app-section-title [sectionTitleText]="footerContacts.text" [sectionTitleSmaller]="true"></app-section-title>
+    <div *ngFor="let rows of footerContacts.rows; index as i">
+        <div *ngFor="let contact of rows.row">
+            <div class="footer-icon-div">
+                <svg>
+                    <use [attr.href]="contact.url"></use>
+                </svg>
+            </div>
+            <a href={{contact.link}} target="_blank">
+                <app-list-item
+                    [listItemNoDot]="true"
+                    [listItemNoPadding]="true"
+                    [listItemIsLink]="true"
+                    [listItemText]="contact.content"
+                >
+                </app-list-item>
+            </a>
+        </div>
+    </div>
+</div>

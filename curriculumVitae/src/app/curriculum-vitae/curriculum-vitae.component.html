@@ -1,0 +1,24 @@
+<div class="cv-outer-container">
+    <div class="inner-container">
+        <div class="cv-options" [ngClass]="{'cv-options-change-positon': summedUp}">
+            <app-checkbox [checkboxLabel]="optionsText.summedUpText" [(checkboxInput)]="summedUp"></app-checkbox>
+            <app-language-selector [languageSelectorLabel]="optionsText.languageText" (languageSelectorLanguage)="updateLanguage($event)"></app-language-selector>
+            <app-dark-mode-button></app-dark-mode-button>
+        </div>
+        <div class="row justify-content-center">
+            <ng-container *ngFor="let columns of curriculum; index as i">
+                <div *ngIf="i !== 1 || !summedUp" [@opacityAnimation] class="col-xl-4 mb-2 cv-column">
+                    <app-image-slider *ngIf="i === 0" [imageSliderImages]="images" class="margin-bottom-22px"></app-image-slider>
+                    <div *ngFor="let titles of columns.column.titles; index as j;" [ngClass]="{'h-100': i === 1}">
+                        <app-section-title [sectionTitleText]="titles.title"></app-section-title>
+                        <ng-container *ngFor="let subtitles of titles.subtitles; let k = index">
+                            <app-section-subtitle [sectionSubtitleText]="subtitles.subtitle"></app-section-subtitle>
+                            <app-list-item *ngFor="let item of subtitles.itens; index as l;" [listItemNoDot]="item.noDot" [listItemText]="item.item"></app-list-item>
+                        </ng-container>
+                    </div>
+                </div>
+            </ng-container>
+            <app-footer [footerContacts]="contacts"></app-footer>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="image-slider-container">
+    <div class="image-div">
+        <button class="left-button">
+            <span class="material-icons" (click)="previusImage()">
+                chevron_left
+            </span>
+        </button>
+        <button class="right-button" (click)="nextImage()">
+            <span class="material-icons">
+                chevron_right
+            </span>
+        </button>
+        <ng-container *ngFor="let image of imageSliderImages; let i = index;">
+            <img *ngIf="i === currentImage" [@imageAnimation] class="image" src={{image.url}} alt="Picture"> 
+        </ng-container>
+    </div>
+    <h1>Ricardo Jensen Eyng</h1>
+<div>

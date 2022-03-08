@@ -1,0 +1,27 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #004aad;
+    --grey: #5b5e66;
+    --light-grey: #c8c8c8;
+    --bg-color: #efefef;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s !important;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.material-icons, .material-icons-outlined, .material-icons-round, .material-icons-sharp, .material-icons-two-tone {
+    transition: 0s !important;
+}

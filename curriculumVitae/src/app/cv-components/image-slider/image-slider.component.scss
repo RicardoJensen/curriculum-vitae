@@ -1,0 +1,85 @@
+.image-slider-container {
+    height: 220px;
+    background-color: var(--blue);
+    border: var(--light-grey) 1px solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-div {
+    height: 0px;
+}
+
+.image-div:hover > button {
+    visibility: visible;
+    opacity: 1;
+}
+
+button {
+    height: 24px;
+    width: 24px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--blue);
+    background: var(--white);
+    border: 0px;
+    border-radius: 50%;
+    line-height: 0px;
+    z-index: 2;
+    display: block;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+button:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:visited {
+    filter: brightness(85%);
+}   
+
+.right-button {
+    top: -152px;
+    left: 125px;
+}
+
+.left-button {
+    top: -128px;
+    left: -125px;
+}
+
+.image {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--grey);
+    display: block;
+    position: relative;
+    top: -310px;
+}
+
+h1 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+// mobile only
+@media only screen and (hover: none) and (pointer: coarse) {
+
+    button {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}
