@@ -255,7 +255,7 @@ export const PORTUGESE_CONTACTS: Contacts = {
                 {
                     url: "./assets/icons/Phone.svg#phone",
                     content: "(41) 99226-0027",
-                    link:"tel:5541992260027"
+                    link:"tel:+5541992260027"
                 }
             ]
         },
@@ -533,7 +533,7 @@ export const ENGLISH_CONTACTS: Contacts = {
                 {
                     url: "./assets/icons/Phone.svg#phone",
                     content: "+55 (41) 99226-0027",
-                    link:"tel:5541992260027"
+                    link:"tel:+5541992260027"
                 }
             ]
         },
