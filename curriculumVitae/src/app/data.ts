@@ -292,7 +292,7 @@ export const ENGLISH_CURRICULUM: Curriculum[] = [
                             subtitle: "University",
                             itens: [
                                 {
-                                    item: "Computer Science - 5th Semester "
+                                    item: "Computer Science - 6th Semester "
                                 },
                                 {
                                     item: "Federal University of Santa Catarina",
