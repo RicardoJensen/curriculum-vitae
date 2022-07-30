@@ -26,7 +26,6 @@ export class DarkModeButtonComponent implements OnInit {
     }
   }
   
-
   toggleDarkMode() {
     this.darkMode = !this.darkMode;
     if (!this.darkMode) {

@@ -14,7 +14,7 @@ export const PORTUGESE_CURRICULUM: Curriculum[] = [
                                     item: "Ciências da Computação - UFSC"
                                 },
                                 {
-                                    item: "5.º Semestre - Previsão 2023",
+                                    item: "6.º Semestre - Previsão 2023.2",
                                     noDot: true
                                 }
                             ]
@@ -561,15 +561,15 @@ export const ENGLISH_OPTIONS : Options = {
 
 export const IMAGES: Images[] = [
     {
-        url: "./assets/images/image1.jpg"
+        url: "./assets/images/img1.jpg"
     },
     {
-        url: "./assets/images/image2.png"
+        url: "./assets/images/img2.jpg"
     },
     {
-        url: "./assets/images/image3.jpg"
+        url: "./assets/images/img3.jpg"
     },
     {
-        url: "./assets/images/image4.jpg"
+        url: "./assets/images/img4.jpg"
     }
 ];

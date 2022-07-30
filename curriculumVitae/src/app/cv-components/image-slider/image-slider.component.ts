@@ -48,7 +48,7 @@ export class ImageSliderComponent implements OnInit {
   startImageTimer() {
     this.imageTimer = setInterval(() => {
       this.nextImage();
-    }, 5000);
+    }, 10000);
   }
 
   clearImageTimer() {
